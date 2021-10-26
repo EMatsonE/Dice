@@ -29,12 +29,11 @@ namespace Dice
                 userInput = Console.ReadLine().ToLower().Trim();
             }
 
-            var randNumOne = new Random();
+                Random random = new Random();
+                Random random2 = new Random();
 
-            var randNumTwo = new Random();
-
-            Console.WriteLine($"Looks like you rolled {randNumOne.Next(1, userDice)} " +
-                $"and {randNumTwo.Next(1, userDice)}!");
+                Console.WriteLine($"Looks like you rolled {random.Next(1, userDice) + 1} " +
+                $"and {random2.Next(1, userDice) + 1}!");
 
 
             bool isValid = false;
